@@ -1,0 +1,43 @@
+
+{
+  "mode": "debug",
+  "port": 8000,
+  "log": {
+    "level": "debug",
+    "filename": "logs/release.log",
+    "maxsize": 300,
+    "max_age": 7,
+    "max_backups": 10  },
+  "database": {
+    "driver": "mysql",
+    "host": "39.99.33.24",
+    "port": "3306",
+    "database": "releases",
+    "username": "maotuan",
+    "password": "maotuan123S",
+    "charset": "utf8mb4",
+    "maximum_connection": 10,
+    "maximum_free_connection": 50,
+    "timeout": -1
+  },
+  "redis": {
+    "default": {
+      "host": "39.99.33.24",
+      "port": "6379",
+      "database": 0,
+      "password": "maotuan",
+      "max_connection": 10,
+      "max_free_connection": 50,
+      "timeout": 0
+    },
+    "sms": {
+      "host": "127.0.0.1",
+      "port": "6379",
+      "database": 1,
+      "password": "maotuan",
+      "max_connection": 10,
+      "max_free_connection": 50,
+      "timeout": 0
+    }
+  }
+}
